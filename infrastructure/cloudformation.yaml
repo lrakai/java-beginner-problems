@@ -125,8 +125,6 @@ Resources:
             # seperate student-facing code from unit tests
             cp $repo_dir/src/* /cloudacademy/lab/code
             chown -R ec2-user:ec2-user /cloudacademy
-            # adjust python sys.path for tests to include student project path
-            sed -i "s%sys.path.append.*%sys.path.append('/home/project/code')%g" $repo_dir/test/*
             docker run --name ide -dit --restart unless-stopped -p 80:3000 -v "/cloudacademy/lab:/home/project:cached" -v "$repo_dir/test:/root/test:cached" -v "$repo_dir/lib:/root/lib:cached" cloudacademydevops/ide:java11
             echo finished!!
       Tags:
