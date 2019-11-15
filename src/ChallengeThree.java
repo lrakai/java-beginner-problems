@@ -3,12 +3,13 @@ import java.time.LocalDate;
 public class ChallengeThree {
     public static String dayOfWeek(String date) {
         /**
-         * Returns a String storing the day of the week of a given date String.
+         * Returns a String storing the day of the week in all capital letters of the
+         * given date String
          * Complete the implementation of the DateUtil class and use it in this function 
          * Arguments
          * date - a String storing a local date, such as "2000-01-01" 
          * Examples
-         * dayOfWeek("2000-01-01") returns "Saturday"
+         * dayOfWeek("2000-01-01") returns "SATURDAY"
          */
 
         // ====================================
@@ -24,7 +25,7 @@ public class ChallengeThree {
 
     public static void main(String[] args) {
         String theDayOfWeek = dayOfWeek("2000-01-01");
-        String expected = "Saturday";
+        String expected = "SATURDAY";
         // Expected output is 
         // true
         System.out.println(theDayOfWeek == expected);
