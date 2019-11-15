@@ -27,6 +27,9 @@ A set of partially-completed java code blocks and requirements to be completed w
 1. Delete IAM resources for lab student:
 
     ```sh
+    aws iam remove-user-from-group --group-name $group --user-name $user
+    aws iam delete-login-profile --user-name $user
     aws iam delete-user --user-name $user
+    aws iam delete-group-policy --group-name $group --policy-name "lab" 
     aws iam delete-group --group-name $group
     ```
