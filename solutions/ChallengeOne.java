@@ -5,8 +5,7 @@ public class ChallengeOne {
          * Arguments
          * numOdds - a positive integer representing the number of odd numbers to store in the array
          * Examples
-         * odds(3) returns [1, 3, 5]
-         * odds(5) returns [1, 3, 5, 7, 9]
+         * odds(3) returns {1, 3, 5}
         */
 
         // ====================================
@@ -14,21 +13,20 @@ public class ChallengeOne {
     
         // CODE1: Write code that will create an array with the first numOdds
         //        odd numbers and return the array
-        
+        var theOdds = new int[numOdds];
+        for(var i = 0; i < numOdds; i++) {
+            theOdds[i] = 2*i+1;
+        }
+        return theOdds;
     
         // ====================================
         // Do not change the code after this
     }
 
     public static void main(String[] args) {
-        firstThreeOdds = odds(3);
+        var theOdds = odds(3);
         // Expected output is 
         // 1, 3, 5
-        System.out.println(String.join(", ", firstThreeOdds));
-
-        firstFiveOdds = odds(5);
-        // Expected output is 
-        // 1, 3, 5, 7, 9
-        System.out.println(String.join(", ", firstFiveOdds));
+        System.out.println(theOdds[0] + ", " + theOdds[1] + ", " + theOdds[2]);
     }
 }
