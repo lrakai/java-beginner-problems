@@ -6,7 +6,6 @@ public class ChallengeOne {
          * numOdds - a positive integer representing the number of odd numbers to store in the array
          * Examples
          * odds(3) returns [1, 3, 5]
-         * odds(5) returns [1, 3, 5, 7, 9]
         */
 
         // ====================================
@@ -21,14 +20,9 @@ public class ChallengeOne {
     }
 
     public static void main(String[] args) {
-        firstThreeOdds = odds(3);
+        int[] theOdds = odds(3);
         // Expected output is 
         // 1, 3, 5
-        System.out.println(String.join(", ", firstThreeOdds));
-
-        firstFiveOdds = odds(5);
-        // Expected output is 
-        // 1, 3, 5, 7, 9
-        System.out.println(String.join(", ", firstFiveOdds));
+        System.out.println(theOdds[0] + ", " + theOdds[1] + ", " + theOdds[2]);
     }
 }

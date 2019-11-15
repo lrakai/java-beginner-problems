@@ -13,8 +13,8 @@ public class ChallengeOne {
     
         // CODE1: Write code that will create an array with the first numOdds
         //        odd numbers and return the array
-        var theOdds = new int[numOdds];
-        for(var i = 0; i < numOdds; i++) {
+        int[] theOdds = new int[numOdds];
+        for(int i = 0; i < numOdds; i++) {
             theOdds[i] = 2*i+1;
         }
         return theOdds;
@@ -24,7 +24,7 @@ public class ChallengeOne {
     }
 
     public static void main(String[] args) {
-        var theOdds = odds(3);
+        int[] theOdds = odds(3);
         // Expected output is 
         // 1, 3, 5
         System.out.println(theOdds[0] + ", " + theOdds[1] + ", " + theOdds[2]);
