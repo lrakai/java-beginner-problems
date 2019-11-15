@@ -2,8 +2,6 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
-import java.io.IOException;
-
 public class TestRunnerThree {
     public static void main(String[] args) {
         Result result = JUnitCore.runClasses(ChallengeThreeTest.class);
