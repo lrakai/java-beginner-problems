@@ -47,7 +47,7 @@ class DateUtil {
     
         // CODE2: Write code to initialize the date field of the class
         theDate = LocalDate.parse(date);
-        System.out.println(theDate);
+        
         // ====================================
         // Do not change the code after this
     }
